@@ -1,6 +1,7 @@
 public class Main {
-/*
-    //EXERCICE 1 : FACILE : SOMME DES ÉLÉMENTS D'UN TABLEAU
+
+ //EXERCICE 1 : FACILE : SOMME DES ÉLÉMENTS D'UN TABLEAU
+
     public static void sommeTableau(String[] args) {
         int [] monTableau = {12, 87, 65,18,25, 642};
         int somme = 0;
@@ -65,11 +66,20 @@ public class Main {
         return isPalindrome;
     }
 
-   /* // EXERCICE 5 : DIFFICILE : DEUX SOMME
-    public static void twoSum(String[] args) {
+   // EXERCICE 5 : DIFFICILE : DEUX SOMME
 
+   public static int[] twoSum(int[] nums, int target) {
 
+       for (int i = 0; i < nums.length; i++) {
+           for (int j = i + 1; j < nums.length; j++) {
 
-    }
-*/
-    }
+               if (nums[i] + nums[j] == target) {
+
+                   return new int[]{i, j};
+               }
+           }
+       }
+
+       return nums;
+   }
+}
