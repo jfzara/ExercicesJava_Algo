@@ -1,5 +1,5 @@
 public class Main {
-
+/*
     //EXERCICE 1 : FACILE : SOMME DES ÉLÉMENTS D'UN TABLEAU
     public static void sommeTableau(String[] args) {
         int [] monTableau = {12, 87, 65,18,25, 642};
@@ -46,9 +46,9 @@ public class Main {
         return reversedString;
     }
 
-    // EXERCICE 4 : DIFFICILE : VÉRIFICATION DE PALINDROME
+    // EXERCICE 4 : DIFFICILE : VÉRIFICATION DE PALINDROME*/
 
-    public static boolean checkPalindrome(String[] args) {
+    public static boolean checkPalindrome() {
         String someString = "Some random string";
         String reversedString2 = "";
         boolean isPalindrome = false;
@@ -62,13 +62,14 @@ public class Main {
         } else {
             System.out.println("Cette chaîne de caractères n'est pas un palindrome.");
         }
-}
+        return isPalindrome;
+    }
 
-    // EXERCICE 5 : DIFFICILE : DEUX SOMME
+   /* // EXERCICE 5 : DIFFICILE : DEUX SOMME
     public static void twoSum(String[] args) {
 
 
 
     }
-
+*/
     }
