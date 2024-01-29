@@ -48,11 +48,21 @@ public class Main {
 
     // EXERCICE 4 : DIFFICILE : VÉRIFICATION DE PALINDROME
 
-    public static void checkPalindrome(String[] args) {
+    public static boolean checkPalindrome(String[] args) {
+        String someString = "Some random string";
+        String reversedString2 = "";
+        boolean isPalindrome = false;
 
-
-
-    }
+        for (int i = someString.length() - 1; i >= 0; i--) {
+            reversedString2 += someString.charAt(i);
+        }
+        if (someString.equals(reversedString2)) {
+            isPalindrome = true;
+            System.out.println("Cette chaîne de caractères est un palindrome.");
+        } else {
+            System.out.println("Cette chaîne de caractères n'est pas un palindrome.");
+        }
+}
 
     // EXERCICE 5 : DIFFICILE : DEUX SOMME
     public static void twoSum(String[] args) {
